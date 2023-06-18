@@ -20,9 +20,22 @@ This README file provides an overview of the application, its features, and inst
 - **Moderate Comments**: Administrators can moderate comments. Inappropriate or offensive comments can be changed, ensuring that discussions remain respectful and within the community guidelines.
 - **Ban/Unban Users**: Administrators have the authority to ban or unban users from the platform. This feature allows them to address user behavior that violates the platform's policies. 
 
-### Features
+###  Prototype in Figma
+![Components](./readme/figma-components.PNG)
+
+![Pages](./readme/figma-pages.PNG)
 
 
+###  Prototype in Figma
+![Home Pages](./readme/home.PNG)
+
+![Home Pages](./readme/posts.PNG)
+
+![Home Pages](./readme/posts.PNG)
+
+![Home Pages](./readme/profile.PNG)
+
+![Home Pages](./readme/search.PNG)
 
 In the project directory, you can run:
 
