@@ -89,7 +89,7 @@ To get started with WaveUp, follow these steps:
 npm install
 ```
 **4.	Start the application:**
-- Run in development mode:
+Run in development mode:
 ```
 npm run dev
 ```
