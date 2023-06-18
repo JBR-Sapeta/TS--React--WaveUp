@@ -1,0 +1,19 @@
+.no-results {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .no-results__picture {
+    display: block;
+    max-width: 454px;
+    max-height: 454px;
+  }
+  
+  .no-results__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

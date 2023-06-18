@@ -1,0 +1,9 @@
+.auth-form--reset {
+  background-image: url('/Reset.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.auth-form__container--reset {
+  background-color: rgba(0, 0, 0, 0.75);
+}

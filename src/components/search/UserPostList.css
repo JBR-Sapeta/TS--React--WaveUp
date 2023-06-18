@@ -1,0 +1,35 @@
+.posts__top-pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.posts__bottom-pagination {
+  width: 100%;
+  margin-bottom: var(--space-50);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postst__message {
+  max-width: 600px;
+  width: 100%;
+  min-height: 50px;
+  padding: var(--space-20) var(--space-30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-16);
+}
+
+.posts__user {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-50);
+}

@@ -1,0 +1,119 @@
+.base-input__container {
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+}
+
+.base-input__field {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid var(--color-white);
+  background-color: transparent;
+}
+
+.base-input__label {
+  width: 100%;
+  font-size: var(--font-size-16);
+  padding-bottom: var(--space-5);
+  color: var(--color-white);
+}
+
+.base-input__field > svg {
+  padding: auto;
+  margin-right: var(--space-5);
+  margin-left: var(--space-5);
+  width: 20px;
+  height: 20px;
+  fill: var(--color-primary-light);
+}
+
+.base-input__field--green {
+  border-bottom: 1px solid var(--color-secondary-light) !important;
+}
+
+.base-input__field--green  > svg {
+  fill: var(--color-secondary-light) !important;
+}
+
+.base-input__field--error {
+  border-bottom: 1px solid var(--color-red-light);
+}
+
+.base-input__field--error > svg {
+  fill: var(--color-red-light);
+}
+
+.base-input__input {
+  order: 2;
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  color: var(--color-white);
+  font-size: var(--font-size-16);
+}
+
+.base-input__input:focus {
+  outline: none;
+}
+
+.base-input__input::placeholder {
+  color: var(--color-white);
+}
+
+.base-input__error {
+  visibility: hidden;
+}
+
+.base-input__error p {
+  width: 100%;
+  min-height: 24px;
+  margin: var(--space-5) 0 0 0;
+  padding-left: var(--space-5);
+  color: var(--color-red-light);
+  /* color: var(--color-white); */
+  font-size: var(--font-size-12);
+}
+
+.base-input__error--active {
+  visibility: visible;
+}
+
+.base-input__field--blue {
+  border-bottom: 1px solid var(--color-primary-dark);
+}
+
+.base-input__field--blue > svg {
+  fill: var(--color-primary-dark);
+}
+
+.base-input__field--blue > input {
+  color: var(--color-black);
+}
+
+.base-input__field--blue > input::placeholder {
+  color: var(--color-black);
+}
+
+.base-input__field--blue .base-input__label {
+  color: var(--color-black);
+}
+
+.base-input__field--green-dark{
+  border-bottom: 1px solid var(--color-secondary-dark);
+}
+
+.base-input__field--green-dark > svg {
+  fill: var(--color-secondary-dark) !important;
+}
+
+.base-input__field--error-dark {
+  border-bottom: 1px solid var(--color-red-dark);
+}
+
+.base-input__field--error-dark > svg {
+  fill: var(--color-red-dark) !important;
+}

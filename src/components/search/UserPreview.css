@@ -1,0 +1,106 @@
+.user-lis-item {
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.user-previev {
+  overflow: hidden;
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  border-radius: var(--radius-4);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+
+.user-previev:hover {
+  background-color: var(--color-gray-blue);
+}
+
+
+
+.user-previev__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-previev__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-previev__content {
+  padding: var(--space-30);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: flex-start;
+  gap: var(--space-20);
+}
+
+.user-previev__content > h2 {
+  margin: 0;
+  display: block;
+  width: 100%;
+  font-size: var(--font-size-24);
+}
+
+.user-previev__data {
+  margin: 0 var(--space-5) 0 0;
+  display: block;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-bold);
+}
+
+.user-previev__data > span {
+  margin-right: var(--space-5);
+  font-weight: var(--font-weight-regular);
+}
+
+.user-previev__data > svg {
+  width: 16px;
+  height: 16px;
+  margin-right: var(--space-10);
+  color: var(--color-gray-200);
+  fill: var(--color-gray-200);
+}
+
+.user-previev:hover .user-previev__data > svg {
+  color: var(--color-primary-dark);
+  fill: var(--color-primary-dark);
+}
+
+@media only screen and (max-width: 624px) {
+  .user-previev__content {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+
+  }
+  
+  .user-previev__avatar{
+    margin-left: var(--space-20);
+  }
+
+}
+
+@media only screen and (max-width: 424px) {
+  .user-previev{
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-previev__content {
+  align-self: center;
+
+  }
+
+  .user-previev__avatar{
+    margin-left: 0;
+    margin-top: var(--space-20);
+  }
+}

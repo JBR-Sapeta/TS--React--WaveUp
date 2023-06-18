@@ -1,0 +1,10 @@
+.auth-form--recovery {
+    background-image: url('/Reset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .auth-form__container--recovery {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  

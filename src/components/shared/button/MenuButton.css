@@ -1,0 +1,55 @@
+.menu__button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 32px;
+  width: 220px;
+  padding-left: var(--space-20);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--color-gray-100);
+  border-left: 8px solid var(--color-gray-100);
+  color: var(--color-black);
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu__button > svg {
+  width: 16px;
+  height: 16px;
+  margin-right: var(--space-40);
+}
+
+.menu__button:hover {
+  transform: translateY(-1px);
+  border-left: 8px solid;
+  border-image: linear-gradient(to top, #008538, #00b84d) 1 100%;
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.menu__button:hover.active {
+  border-image: linear-gradient(to top, #0050b2, #4ca6ff) 1 100%;
+}
+
+.menu__button:active {
+  transform: translateY(1px);
+  border-left: 8px solid;
+  border-image: linear-gradient(to top, #0050b2, #4ca6ff) 1 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px inset;
+  color: var(--color-black);
+}
+
+.menu__button:active > svg {
+  fill: var(--color-black);
+}
+
+a.active {
+  border-left: 8px solid;
+  border-image: linear-gradient(to top, #0050b2, #4ca6ff) 1 100%;
+  color: #0050b2;
+}
+
+.active > svg {
+  fill: #0050b2;
+}

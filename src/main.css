@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 500;
+
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-size-48: 48px;
+  --font-size-60: 60px;
+
+
+  --color-primary-light: #4ca6ff;
+  --color-primary-dark: #0050b2;
+  --color-secondary-light: #00b84d;
+  --color-secondary-dark: #008538;
+
+  --color-red-light: #e11b1b;
+  --color-red-dark: #d80027;
+
+  --color-white: #ffffff;
+  --color-gray-100: #e6e6e6;
+  --color-gray-200: #61696b;
+  --color-gray-300: #2e3638;
+  --color-gray-400: #141d1f;
+  --color-gray-500: #061013;
+  --color-gray-blue: #f0f8ff;
+  --color-black: #00080a;
+
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-24: 24px;
+  --radius-30: 30px;
+  --radius-48: 48px;
+
+  --space-5: 5px;
+  --space-10: 10px;
+  --space-15: 15px;
+  --space-20: 20px;
+  --space-25: 25px;
+  --space-30: 30px;
+  --space-40: 40px;
+  --space-50: 50px;
+  --space-60: 60px;
+  --space-70: 70px;
+  --space-80: 80px;
+  --space-100: 100px;
+  --space-150: 150px;
+  --space-200: 200px;
+
+  --page-size: 1280px;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.hover-animation {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.hover-animation::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    90deg,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+  transition: width 0.25s ease-out;
+}
+
+.hover-animation:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}

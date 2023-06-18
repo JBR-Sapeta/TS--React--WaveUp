@@ -1,0 +1,17 @@
+.comment-list__actions {
+    width: 100%;
+    padding: var(--space-20);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-50);
+  }
+  
+
+  @media screen and (max-width: 624px) {
+    .comment-list__actions{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: var(--space-25);
+    }
+  }

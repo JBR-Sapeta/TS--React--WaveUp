@@ -1,0 +1,9 @@
+.auth-form--signin {
+  background-image: url('/SignIn.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.auth-form__container--signin {
+  background-color: rgba(0, 0, 0, 0.8);
+}

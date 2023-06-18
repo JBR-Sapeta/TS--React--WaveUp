@@ -1,0 +1,222 @@
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  gap: 0;
+  width: 100%;
+  min-height: 320px;
+}
+
+.footer__container {
+  max-width: var(--page-size);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__baner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__header {
+  font-family: 'Iceland', cursive;
+  font-size: var(--font-size-60);
+}
+
+.footer__slogan {
+  display: inline;
+  font-size: var(--font-size-16);
+  align-self: center;
+  margin: var(--space-20);
+  transform: translateY(9px);
+}
+
+.footer__navigation {
+  padding-top: var(--space-20);
+  align-self: center;
+}
+
+.footer__link {
+  margin-left: var(--space-25);
+  font-size: var(--font-size-18);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: var(--color-primary-light);
+}
+
+.footer__hr {
+  display: block;
+  width: 100%;
+  height: 3px;
+  transform: translateY(-20px);
+  border: none;
+  background: linear-gradient(90deg, #4ca6ff 0%, #0050b2 68.23%);
+}
+
+.footer__media {
+  display: flex;
+  width: 100%;
+  margin: var(--space-30) 0 var(--space-50) 0;
+}
+.footer__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer__li {
+  margin-left: var(--space-50);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+}
+
+.footer__li:first-child {
+  margin-left: 0;
+}
+
+.footer__a {
+  padding: var(--space-5) 0;
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.footer__a > svg {
+  width: 20px;
+  height: 20px;
+  margin-right: var(--space-5);
+  transform: translateY(4px);
+}
+
+.footer__rights {
+  font-size: var(--font-size-12);
+}
+
+.hover-animation {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.hover-animation::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    180deg,
+    var(--color-secondary-dark) var(--color-secondary-light)
+  );
+  transition: width 0.25s ease-out;
+}
+
+.hover-animation:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+@media only screen and (max-width: 1280px) {
+  .footer__container {
+    padding: 0 var(--space-40) var(--space-20) var(--space-40);
+  }
+}
+
+@media only screen and (max-width: 724px) {
+  .footer__container {
+    padding: 0 var(--space-20) var(--space-20) var(--space-20);
+  }
+
+  .footer__baner {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__logo {
+    align-self: center;
+  }
+
+  .footer__header {
+    font-family: 'Iceland', cursive;
+    font-size: var(--font-size-48);
+  }
+
+  .footer__slogan {
+    font-size: var(--font-size-14);
+    transform: translateY(6px);
+  }
+
+  .footer__navigation {
+    width: 100%;
+    gap: var(--space-20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 var(--space-5) 0;
+  }
+
+  .footer__link {
+    margin-left: 0;
+  }
+
+  .footer__hr {
+    transform: translateY(0px);
+  }
+
+  .footer__list {
+    gap: var(--space-10);
+  }
+
+  .footer__li {
+    width: 35%;
+    margin-left: 0;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .footer__logo {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__header {
+    width: 100%;
+    margin-bottom: var(--space-10);
+    text-align: center;
+  }
+
+  .footer__slogan {
+    margin-top: 0;
+    margin-bottom: var(--space-50);
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .footer__list {
+    flex-direction: column;
+  }
+  .footer__li{
+    width: 45%;
+  }
+}

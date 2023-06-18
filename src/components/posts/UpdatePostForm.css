@@ -1,0 +1,115 @@
+
+.update-post__form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-4);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.update-post__header {
+  width: 100%;
+  padding: var(--space-20);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.update-post_user {
+  display: flex;
+  gap: var(--space-10);
+}
+
+.update-post_info {
+  align-self: center;
+}
+
+.update-post_name {
+  margin: 0;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+}
+
+.update-post_date {
+  margin: 0;
+  font-size: var(--font-size-12);
+}
+
+.update-post__exit {
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.update-post__exit > svg {
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.update-post__exit:hover > svg {
+  color: var(--color-primary-dark);
+  fill: var(--color-primary-dark);
+}
+
+.update-post__exit:active > svg {
+  color: var(--color-red-dark);
+  fill: var(--color-red-dark);
+  transform: translateY(1px);
+}
+
+.update-post__textarea {
+  width: 100%;
+  padding: 0 var(--space-20) 0 var(--space-20);
+  display: flex;
+  flex-direction: column;
+}
+
+.update-post__textarea > textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: var(--space-10);
+  font-size: var(--font-size-16);
+  font-family: Roboto, sans-serif;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-4);
+  resize: none;
+}
+
+.update-post__textarea > textarea:focus {
+  outline: none;
+  border: 1px solid var(--color-primary-dark);
+}
+
+.update-post_hr {
+  margin-top: var(--space-10);
+  width: 90%;
+  height: 1px;
+  border: none;
+  background-color: var(--color-gray-100);
+}
+
+.update-post_actions {
+  width: 100%;
+  padding: var(--space-15) var(--space-20) var(--space-20) var(--space-20);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-50);
+}
+
+.update-post__error {
+  display: block;
+  visibility: hidden;
+  min-height: 10px;
+  margin: 0;
+  padding-left: var(--space-5);
+  color: var(--color-red-dark);
+  font-size: var(--font-size-12);
+}
+
+.update-post__error--active {
+  visibility: visible;
+  margin: var(--space-5) 0 var(--space-5) 0;
+}

@@ -1,0 +1,124 @@
+.comment-form {
+  margin: var(--space-30);
+  border-radius: var(--radius-24);
+  background-color: var(--color-gray-100);
+}
+
+.comment-form__header {
+  width: 100%;
+  padding: var(--space-20);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.comment-form__user {
+  display: flex;
+  gap: var(--space-10);
+}
+
+.comment-form__info {
+  display: flex;
+  gap: var(--space-10);
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.comment-form__name {
+  margin: 0;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+}
+
+.comment-form__date {
+  margin: 0;
+  font-size: var(--font-size-12);
+}
+
+.comment-form__input {
+  width: 100%;
+  padding: 0 var(--space-20) 0 var(--space-20);
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form__input > textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: var(--space-10);
+  font-size: var(--font-size-16);
+  font-family: Roboto, sans-serif;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-4);
+  background-color: var(--color-gray-100);
+  resize: none;
+}
+
+.comment-form__input > textarea:focus {
+  outline: none;
+  border: 1px solid var(--color-primary-dark);
+  background-color: var(--color-white);
+}
+
+.comment-form__error {
+  display: block;
+  visibility: hidden;
+  min-height: 10px;
+  margin: 0;
+  padding-left: var(--space-5);
+  color: var(--color-red-dark);
+  font-size: var(--font-size-12);
+}
+
+.comment-form__error--active {
+  visibility: visible;
+  margin: var(--space-5) 0 var(--space-5) 0;
+}
+
+.comment-form__submit {
+  width: 100%;
+  padding-bottom: var(--space-10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-form__exit {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.comment-form__exit > svg {
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.comment-form__exit:hover > svg {
+  color: var(--color-primary-dark);
+  fill: var(--color-primary-dark);
+}
+
+.comment-form__exit:active > svg {
+  color: var(--color-red-dark);
+  fill: var(--color-red-dark);
+  transform: translateY(1px);
+}
+
+@media screen and (max-width: 424px) {
+  .comment-form__info {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .comment-form__user {
+    align-items: center;
+  }
+
+  .comment-form  {
+    margin: var(--space-20) var(--space-10);
+  }
+}

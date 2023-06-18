@@ -1,0 +1,23 @@
+.search {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-50);
+}
+
+.search__top-pagination {
+  margin-top: var(--space-70);
+}
+
+.search__bottom-pagination {
+  display: flex;
+  width: 100%;
+  margin-bottom: var(--space-50);
+}
+
+.search__message {
+  margin-top: var(--space-80);
+}

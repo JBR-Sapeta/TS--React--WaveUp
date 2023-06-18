@@ -1,0 +1,222 @@
+.account-form {
+  max-width: 630px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-30);
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: var(--radius-12);
+}
+
+.account-form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-30);
+}
+
+.account-form__textarea {
+  width: 100%;
+  margin: var(--space-40) 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-form__textarea > label {
+  margin-bottom: var(--space-10);
+  font-size: var(--font-size-16);
+}
+
+.account-form__textarea > textarea {
+  max-width: 620px;
+  width: 100%;
+  min-height: 140px;
+  padding: var(--space-10);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-4);
+  font-family: Roboto, sans-serif;
+  font-size: var(--font-size-12);
+  word-spacing: 0.2rem;
+  line-height: 1.5rem;
+  resize: none;
+}
+
+.account-form__textarea > textarea:focus {
+  outline: none;
+  border: 1px solid var(--color-secondary-dark);
+}
+
+.account-form__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.account-form__image-prewiev {
+  position: relative;
+}
+
+.account-form__image {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.account-form__image > label {
+  cursor: pointer;
+  max-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5) var(--space-10);
+  border-radius: var(--radius-2);
+  background-image: linear-gradient(
+    180deg,
+    var(--color-primary-light),
+    var(--color-primary-dark) 68%
+  );
+  color: white;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-wieght-500);
+}
+
+.account-form__image > label:active {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-secondary-light),
+    var(--color-secondary-dark) 78%
+  );
+  transition: 0.3s color ease-in-out;
+}
+
+.account-form__image > label > svg {
+  min-width: 16px;
+  width: 20px;
+  height: 20px;
+  margin-right: var(--space-5);
+  fill: var(--color-white);
+}
+
+.account-form__image > input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.account-form__info {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.account-form__error {
+  display: block;
+  visibility: hidden;
+  min-height: 24px;
+  margin: 0;
+  padding-left: var(--space-5);
+  color: var(--color-red-dark);
+  font-size: var(--font-size-12);
+}
+
+.account-form__error--active {
+  visibility: visible;
+  margin: var(--space-5) 0 var(--space-5) 0;
+}
+
+.account-form__date {
+  margin-top: var(--space-30);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.account-form__date > label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-right: var(--space-10);
+  padding: var(--space-5);
+  font-size: var(--font-size-16);
+}
+
+.account-form__date > label > svg {
+  min-width: 16px;
+  width: 20px;
+  height: 20px;
+  margin-right: var(--space-5);
+  fill: var(--color-primary-dark);
+}
+
+.account-form__date > input {
+  cursor: pointer;
+  height: 28px;
+  border: 1px solid var(--color-primary-dark);
+  font-size: var(--font-size-14);
+}
+
+.account-form__date > input:focus {
+  outline: none;
+  border: 1px solid var(--color-secondary-dark);
+}
+.account-form__label--focues > svg {
+  fill: var(--color-secondary-dark) !important;
+}
+
+.account-form__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-40);
+}
+
+@media screen and (max-width: 624px) {
+  .account-form {
+    padding: 0;
+    align-items: center;
+  }
+
+  .account-form__inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-30);
+  }
+
+  .account-form__textarea {
+    padding: var(--space-10);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .account-form__textarea > textarea {
+    max-width: 420px;
+    width: 100%;
+    min-height: 200px;
+
+  }
+  
+  .account-form__actions{
+    margin-bottom: var(--space-30);
+  }
+}
+
+@media screen and (max-width: 374px) {
+
+  .account-form__actions{
+    margin-bottom: var(--space-30);
+    flex-direction: column;
+    gap: var(--space-20);
+  }
+}

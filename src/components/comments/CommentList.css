@@ -1,0 +1,26 @@
+.comment-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-list__hr {
+  margin-top: var(--space-10);
+  width: 90%;
+  height: 1px;
+  border: none;
+  background-color: var(--color-gray-100);
+}
+
+.comment-list__message {
+  margin: var(--space-30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-list__message > p {
+  font-size: var(--font-size-14);
+}
+

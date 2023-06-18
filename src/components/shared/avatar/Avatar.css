@@ -1,0 +1,39 @@
+.avatar__container--300 {
+  width: 300px;
+  min-width: 300px;
+  height: 300px;
+}
+.avatar__container--150 {
+  width: 150px;
+  min-width: 150px;
+  height: 150px;
+}
+.avatar__container--50 {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+}
+.avatar__container--32 {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+}
+
+.avatar__container--circle {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.avatar__avatar {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+}
+
+.avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,189 @@
+.notification {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 13;
+  max-width: 600px;
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: var(--space-10);
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-12);
+}
+
+.notification__contetnt {
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-40);
+}
+
+/*  Success */
+
+.notification__container--succes {
+  width: 100%;
+  padding: 0 var(--space-20);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-50);
+  border-radius: var(--radius-12);
+  border: 1px solid var(--color-secondary-dark);
+}
+
+.notification__container--succes > button {
+  padding: var(--space-5) var(--space-15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--radius-4);
+  background-image: linear-gradient(
+    180deg,
+    var(--color-secondary-light),
+    var(--color-secondary-dark)
+  );
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.notification__container--succes > button:hover {
+  transform: translateY(-1px);
+}
+.notification__container--succes > button:active {
+  transform: translateY(1px);
+}
+.notification__container--succes .notification__contetnt > p {
+  color: var(--color-secondary-dark);
+  font-size: var(--font-size-14);
+}
+
+.notification__container--succes .notification__contetnt > svg {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-secondary-dark);
+  color: var(--color-secondary-dark);
+}
+
+/* Error */
+
+.notification__container--error {
+  width: 100%;
+  padding: 0 var(--space-20);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-50);
+  border-radius: var(--radius-12);
+  border: 1px solid var(--color-red-dark);
+}
+
+.notification__container--error > button {
+  padding: var(--space-5) var(--space-15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--radius-4);
+  background-image: linear-gradient(
+    180deg,
+    var(--color-red-light),
+    var(--color-red-dark)
+  );
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.notification__container--error > button:hover {
+  transform: translateY(-1px);
+}
+.notification__container--error > button:active {
+  transform: translateY(1px);
+}
+.notification__container--error .notification__contetnt > p {
+  color: var(--color-red-dark);
+  font-size: var(--font-size-14);
+}
+
+.notification__container--error .notification__contetnt > svg {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-red-dark);
+  color: var(--color-red-dark);
+}
+
+/* Pending */
+
+.notification__container--pending {
+  width: 100%;
+  padding: 0 var(--space-50);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-50);
+  border-radius: var(--radius-12);
+  border: 1px solid var(--color-primary-dark);
+}
+
+.notification__container--pending > p {
+  color: var(--color-primary-dark);
+  font-size: var(--font-size-14);
+}
+
+.notification__container--pending {
+  width: 100%;
+  padding: 0 var(--space-50);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-50);
+  border-radius: var(--radius-12);
+  border: 1px solid var(--color-primary-dark);
+}
+
+.notification__container--pending > p {
+  color: var(--color-primary-dark);
+  font-size: var(--font-size-14);
+}
+
+.notification__spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification__spinner > svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-primary-dark);
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 724px) {
+  .notification__container--error,
+  .notification__container--succes {
+    flex-direction: column;
+    gap:0;
+    padding: 0 var(--space-20) var(--space-10) var(--space-20);
+  }
+}

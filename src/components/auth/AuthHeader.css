@@ -1,0 +1,33 @@
+.auth-header__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.auth-header__header {
+  margin: 0 0 var(--space-15) 0;
+  color: var(--color-white);
+  font-family: 'Iceland', cursive;
+  font-size: var(--font-size-48);
+}
+
+.auth-header__hr {
+  width: 300px;
+  height: 2px;
+  border: 0;
+  background: linear-gradient(90deg, #4ca6ff 0%, #0050b2 68.23%);
+}
+
+.auth-header__slogan {
+  color: var(--color-white);
+  margin: var(--space-5);
+  font-size: var(--font-size-18);
+}
+
+.auth-header__block--black h2,
+.auth-header__block--black p{
+  color: var(--color-black);
+}
