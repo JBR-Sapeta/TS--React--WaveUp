@@ -85,7 +85,7 @@ function PostItem({
     postDate = formattedDate(createdAt, 'Y-ML-D');
   }
 
-  const postLiked = likes.includes(currentUserId);
+  const postLiked = likes?.includes(currentUserId);
 
   const likeHandler = () => {
     if (postLiked) {
@@ -104,7 +104,7 @@ function PostItem({
     }
   };
 
-  const canModerate = isAdmin && !(currentUserId === user.id);
+  const canModerate = isAdmin && !(currentUserId === user?.id);
 
   return (
     <motion.li {...postAnimation} className="post__item">
@@ -134,7 +134,7 @@ function PostItem({
                 <p className="post__date">{postDate}</p>
               </div>
             </div>
-            {currentUserId === user.id && (
+            {currentUserId === user?.id && (
               <DropdownMenu>
                 <DropdownItem onClick={() => setShowForm(true)}>
                   <BaseIcon name="MdModeEdit" />
@@ -196,7 +196,7 @@ function PostItem({
                 <BaseIcon name="FaRegHeart" />
               )}
 
-              {likes.length}
+              {likes?.length}
             </GrayButton>
             <GrayButton
               type="button"
