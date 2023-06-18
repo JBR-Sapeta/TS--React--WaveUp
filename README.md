@@ -51,25 +51,59 @@ Here you can chceck prototype - [WaveUp Prototype]([https://nodejs.org/en](https
 #### Home Search
 ![Home Pages](./readme/search.PNG)
 
-In the project directory, you can run:
 
-### `npm run dev`
+### Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser.
+WaveUp is built using the following key technologies and dependencies:
+- React - 18.2.0
+- React Dom - 18.2.0
+- React i18next - 12.3.1
+- React Icons - 4.8.0
+- React-router-dom - 6.10.0
+- React Redux - 8.0.5
+- Redux Toolkit - 1.9.3
+- Axios - 1.3.5
+- Framer Motion - 10.12.16
+- Secure-ls - 1.2.
+- Typescript - 4.9.3
+- Vite - 4.2.0
+- i18next - 22.5.1
+- i18next-browser-languagedetector - 7.0.2
+- i18next-http-backend - 2.2.1
 
-The page will reload when you make changes.
-You may also see any lint errors in the console.
+## Getting Started
+To run the WaveUp application locally, follow these steps:
 
-### `npm test`
+### Prerequisites
+Before running the WaveUp, make sure you have the [Node.js](https://nodejs.org/en) installed.
 
-Launches the test runner in the interactive watch mode.
+### Getting Started
+To get started with WaveUp, follow these steps:
 
+**1.  Download code or clone the repository.**
 
-### `npm run build`
+**2.	Navigate to the project directory.**
 
-Builds the app for production to the `build` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**3.	Install the dependencies:**
+```
+npm install
+```
+**4.	Start the application:**
+- Run in development mode:
+```
+npm run dev
+```
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+**6. Open your web browser and visit http://localhost:3000/ to access WaveUp Application**
+
+### Production 
+
+1.  Builds the app for production to the `dist` folder.
+```
+npm run build
+```
+
+2.  Run in production mode:
+```
+npm start
+```
