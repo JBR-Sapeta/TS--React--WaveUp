@@ -3,6 +3,10 @@
 Welcome to WaveUp, a social media application where you can connect with friends, share your thoughts, experiences and memories through posts.
 This README file provides an overview of the application, its features, and instructions for getting started. This repository contains Frontend of WaveUp application, built using React.
 
+## Important
+- You can find server application at following link - [Waveup Backend](https://github.com/JBR-Sapeta/JS--Express--WaveUp)
+
+
 ## Project Overview
 
 ### Features
