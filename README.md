@@ -28,7 +28,9 @@ Here you can chceck prototype - [WaveUp Prototype]([https://nodejs.org/en](https
 
 ![Pages](./readme/figma-pages.PNG)
 
-###  Application Views
+###  Application Triller
+
+[![Watch the video](./readme/home.png)]([https://youtu.be/vt5fpE0bzSY](https://www.youtube.com/watch?v=vZyUiabLg1g))
 
 
 ###  Application Views
