@@ -5,8 +5,6 @@ This README file provides an overview of the application, its features, and inst
 
 ## Project Overview
 
-###  Application Triller
-[![Watch the video](https://img.youtube.com/vi/vZyUiabLg1g/maxresdefault.jpg)](https://youtu.be/vZyUiabLg1g)
 ### Features
 - **Internationalization**: application supports 2 languages - Polish and English.
 - **User Registration**: Users can create an account on WaveUp by providing their accountname, email address, and password. Once registered, they can log in to their accounts.
@@ -22,6 +20,11 @@ This README file provides an overview of the application, its features, and inst
 - **Moderate Comments**: Administrators can moderate comments. Inappropriate or offensive comments can be changed, ensuring that discussions remain respectful and within the community guidelines.
 - **Ban/Unban Users**: Administrators have the authority to ban or unban users from the platform. This feature allows them to address user behavior that violates the platform's policies. 
 
+
+###  Application Triller
+In this video, you'll get a comprehensive overview of the application's features.
+[![Watch the video](https://img.youtube.com/vi/vZyUiabLg1g/maxresdefault.jpg)](https://youtu.be/vZyUiabLg1g)
+
 ###  Prototype in Figma
 The frontend prototype was developed using Figma. 
 Here you can chceck prototype - [WaveUp Prototype]([https://nodejs.org/en](https://www.figma.com/file/19JdEY7iTTtytfn2cLiZtj/Social-App?type=design&node-id=303%3A4&t=0MGoZ2R1nwouNUvQ-1)).
@@ -31,20 +34,21 @@ Here you can chceck prototype - [WaveUp Prototype]([https://nodejs.org/en](https
 ![Pages](./readme/figma-pages.PNG)
 
 
-
 ###  Application Views
+
+#### Home Page
 ![Home Pages](./readme/home.PNG)
 
+#### Home Sign Up
+![Home Pages](./readme/signup.PNG)
 
+#### Home Posts
 ![Home Pages](./readme/posts.PNG)
 
-
-![Home Pages](./readme/posts.PNG)
-
-
+#### Home Profile
 ![Home Pages](./readme/profile.PNG)
 
-
+#### Home Search
 ![Home Pages](./readme/search.PNG)
 
 In the project directory, you can run:
