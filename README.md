@@ -105,5 +105,5 @@ npm run build
 
 2.  Run in production mode:
 ```
-npm start
+npm run preview
 ```
