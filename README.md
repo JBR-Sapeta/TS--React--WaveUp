@@ -5,6 +5,8 @@ This README file provides an overview of the application, its features, and inst
 
 ## Project Overview
 
+###  Application Triller
+[![Watch the video](https://img.youtube.com/vi/vZyUiabLg1g/maxresdefault.jpg)](https://youtu.be/vZyUiabLg1g)
 ### Features
 - **Internationalization**: application supports 2 languages - Polish and English.
 - **User Registration**: Users can create an account on WaveUp by providing their accountname, email address, and password. Once registered, they can log in to their accounts.
@@ -28,10 +30,6 @@ Here you can chceck prototype - [WaveUp Prototype]([https://nodejs.org/en](https
 
 ![Pages](./readme/figma-pages.PNG)
 
-###  Application Triller
-
-[![Watch the video](./readme/home.png)]([https://youtu.be/vt5fpE0bzSY](https://youtu.be/vZyUiabLg1g))
-[![Watch the video](https://img.youtube.com/vi/vZyUiabLg1g/maxresdefault.jpg)](https://youtu.be/vZyUiabLg1g)
 
 
 ###  Application Views
