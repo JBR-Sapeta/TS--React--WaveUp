@@ -31,6 +31,7 @@ Here you can chceck prototype - [WaveUp Prototype]([https://nodejs.org/en](https
 ###  Application Triller
 
 [![Watch the video](./readme/home.png)]([https://youtu.be/vt5fpE0bzSY](https://www.youtube.com/watch?v=vZyUiabLg1g))
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
 
 
 ###  Application Views
