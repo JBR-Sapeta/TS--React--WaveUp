@@ -21,19 +21,28 @@ This README file provides an overview of the application, its features, and inst
 - **Ban/Unban Users**: Administrators have the authority to ban or unban users from the platform. This feature allows them to address user behavior that violates the platform's policies. 
 
 ###  Prototype in Figma
+The frontend prototype was developed using Figma. 
+Here you can chceck prototype - [WaveUp Prototype]([https://nodejs.org/en](https://www.figma.com/file/19JdEY7iTTtytfn2cLiZtj/Social-App?type=design&node-id=303%3A4&t=0MGoZ2R1nwouNUvQ-1)).
+
 ![Components](./readme/figma-components.PNG)
 
 ![Pages](./readme/figma-pages.PNG)
 
+###  Application Views
 
-###  Prototype in Figma
+
+###  Application Views
 ![Home Pages](./readme/home.PNG)
 
-![Home Pages](./readme/posts.PNG)
 
 ![Home Pages](./readme/posts.PNG)
+
+
+![Home Pages](./readme/posts.PNG)
+
 
 ![Home Pages](./readme/profile.PNG)
+
 
 ![Home Pages](./readme/search.PNG)
 
