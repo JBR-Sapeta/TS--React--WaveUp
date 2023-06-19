@@ -31,7 +31,6 @@ In this video, you'll get a comprehensive overview of the application's features
 
 ###  Prototype in Figma
 The frontend prototype was developed using Figma. 
-Here you can chceck prototype - [WaveUp Prototype]([https://nodejs.org/en](https://www.figma.com/file/19JdEY7iTTtytfn2cLiZtj/Social-App?type=design&node-id=303%3A4&t=0MGoZ2R1nwouNUvQ-1)).
 
 ![Components](./readme/figma-components.PNG)
 
